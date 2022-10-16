@@ -1,0 +1,63 @@
+:root {
+    --color-lc: #6174dd;
+}
+
+body {
+    font-family: 'Open Sans', 'Maximum Impact', sans-serif;
+    font-size: 15px;
+}
+
+h1 {
+    margin-top: 0;
+    color: white;
+}
+
+form {
+    background-color: var(--color-lc);
+    padding: 2rem;
+}
+
+form input {
+    display: block;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 0.5rem;
+    ;
+}
+
+form label {
+    display: block;
+    padding-bottom: 0.5rem;
+    color: white;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+}
+
+.card p {
+    color: white;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 0.85;
+    margin: 0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.fixed {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+}
+
+.fixed-top {
+    top: 15px;
+    left: 0;
+}
+
+.fixed-bot {
+    bottom: 15;
+    left: 0;
+}
