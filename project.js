@@ -19,9 +19,29 @@ function submitHandler(evt) {
   form.reset();
 }
 
+function handleDeleteButton(evt) {
+  const cardId = evt.target.attributes["card-id"].value;
+  const card = document.querySelector(`div[card-id="${cardId}"]`);
+  card.remove()
+}
+
 function createMeme(url, text1, text2) {
+  const cardId = Math.random();
+
   const card = document.createElement("div");
   card.classList = "card";
+  card.setAttribute("card-id", cardId);
+
+  const cardBody = document.createElement("div");
+  cardBody.classList = "card-body";
+
+  const cardFooter = document.createElement("div");
+  cardFooter.classList = "card-footer";
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+  deleteBtn.setAttribute("card-id", cardId)
+  deleteBtn.addEventListener("click", handleDeleteButton);
 
   const img = document.createElement("img");
   img.src = url;
@@ -34,9 +54,13 @@ function createMeme(url, text1, text2) {
   textBot.classList = "fixed fixed-bot";
   textBot.textContent = text2;
 
-  card.appendChild(img);
-  card.appendChild(textTop);
-  card.appendChild(textBot);
+  cardBody.appendChild(img);
+  cardBody.appendChild(textTop);
+  cardBody.appendChild(textBot);
+  card.appendChild(cardBody);
+
+  cardFooter.appendChild(deleteBtn);
+  card.appendChild(cardFooter);
 
   results.appendChild(card);
 }

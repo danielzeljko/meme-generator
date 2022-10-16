@@ -33,7 +33,15 @@ form label {
 
 .card {
     display: inline-block;
+    margin: 10px;
+}
+
+.card-body {
     position: relative;
+}
+
+.card-footer button {
+    float: right;
 }
 
 .card p {
@@ -58,6 +66,6 @@ form label {
 }
 
 .fixed-bot {
-    bottom: 15;
+    bottom: 15px;
     left: 0;
 }
