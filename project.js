@@ -1,3 +1,5 @@
+"use strict";
+
 const results = document.getElementById("results");
 document.getElementById("image-url").defaultValue = " https://s36537.pcdn.co/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg.optimal.jpg ";
 
@@ -20,8 +22,8 @@ function submitHandler(evt) {
 }
 
 function handleDeleteButton(evt) {
-  const cardId = evt.target.attributes["card-id"].value;
-  const card = document.querySelector(`div[card-id="${cardId}"]`);
+  const cardId = evt.target.dataset.id;
+  const card = document.querySelector(`div[data-id="${cardId}"]`);
   card.remove()
 }
 
@@ -30,7 +32,7 @@ function createMeme(url, text1, text2) {
 
   const card = document.createElement("div");
   card.classList = "card";
-  card.setAttribute("card-id", cardId);
+  card.setAttribute("data-id", cardId);
 
   const cardBody = document.createElement("div");
   cardBody.classList = "card-body";
@@ -40,7 +42,7 @@ function createMeme(url, text1, text2) {
 
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "Delete";
-  deleteBtn.setAttribute("card-id", cardId)
+  deleteBtn.setAttribute("data-id", cardId)
   deleteBtn.addEventListener("click", handleDeleteButton);
 
   const img = document.createElement("img");
