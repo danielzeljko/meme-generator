@@ -1,7 +1,7 @@
 "use strict";
 
 const results = document.getElementById("results");
-document.getElementById("image-url").defaultValue = " https://s36537.pcdn.co/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg.optimal.jpg ";
+// document.getElementById("image-url").defaultValue = " https://s36537.pcdn.co/wp-content/uploads/2017/08/A-fluffy-cat-looking-funny-surprised-or-concerned.jpg.optimal.jpg ";
 
 const form = document.getElementById("my-form");
 form.addEventListener("submit", submitHandler);
