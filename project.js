@@ -17,6 +17,11 @@ function submitHandler(evt) {
     return;
   }
 
+  if(url.trim() === ""){
+    alert("An image is required to make a meme.")
+    return;
+  }
+
   createMeme(url, textTop, textBot);
   form.reset();
 }
