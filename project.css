@@ -58,9 +58,9 @@ form label {
 
 .card p {
     color: white;
-    font-size: 3rem;
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
-    line-height: 0.85;
+    line-height: 1;
     margin: 0;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
@@ -85,4 +85,10 @@ form label {
 .btn {
     margin-top: 2rem;
     margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
 }
