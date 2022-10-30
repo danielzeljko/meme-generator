@@ -2,6 +2,8 @@
 
 ---
 
+![Screenshot from 2022-10-29 18-20-11](https://user-images.githubusercontent.com/115326106/198858376-2e1e4888-55af-4e72-a42e-1cf881bc7a83.png)
+
 For this assignment, you’ll be building a meme generator in the browser using HTML, CSS, and JavaScript.
 
 Your generator should consist of a form that accepts a link to an image, text for the top of the meme, and text for the bottom of the meme. When the user submits the form, use JavaScript to append to the DOM a div which contains the meme, including the image and its text.
