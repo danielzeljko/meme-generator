@@ -1,7 +1,3 @@
-<a href="https://danielzeljko.github.io/meme-generator/" target="_blank">View the live site</a>
-
----
-
 ![Screenshot from 2022-10-29 18-20-11](https://user-images.githubusercontent.com/115326106/198858376-2e1e4888-55af-4e72-a42e-1cf881bc7a83.png)
 
 For this assignment, you’ll be building a meme generator in the browser using HTML, CSS, and JavaScript.
